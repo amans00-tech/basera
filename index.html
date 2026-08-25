@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Basera — Real Estate</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Basera</h1>
+      <p class="tagline">Find your next home</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Featured Listing</h2>
+      <div class="listing">
+        <img src="/images/sample-house.jpg" alt="Sample house">
+        <div class="listing-info">
+          <h3>Sample Property</h3>
+          <p class="price">$350,000</p>
+          <p class="desc">A beautiful 3-bedroom home in a quiet neighborhood. Close to schools and parks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <!-- Netlify Forms -->
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        <label>
+          Your name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+      <p class="note">Or email us at <a href="mailto:amansharma31121999@gmail.com">amansharma31121999@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Basera</div>
+  </footer>
+</body>
+</html>
